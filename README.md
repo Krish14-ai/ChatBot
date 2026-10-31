@@ -31,3 +31,12 @@ A simple conversational chatbot built with Streamlit and LangChain. It uses Goog
 
    Keep this key private and do not commit the `.env` file.
 
+## Run the app
+
+From the project directory, start Streamlit:
+
+```powershell
+python -m streamlit run Bot\ChatBot.py
+```
+
+Streamlit will print a local URL to open in your browser. Enter a message in the chat box to start a conversation.
