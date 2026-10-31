@@ -40,3 +40,14 @@ python -m streamlit run Bot\ChatBot.py
 ```
 
 Streamlit will print a local URL to open in your browser. Enter a message in the chat box to start a conversation.
+
+## Project structure
+
+```text
+.
+├── Bot/
+│   └── ChatBot.py
+└── README.md
+```
+
+The application displays the conversation in the browser and sends the current session's message history to the model on each turn. The history is not persisted between sessions.
