@@ -57,3 +57,19 @@ python -m streamlit run Bot\ChatBot.py
 
 This opens a local Streamlit page in your browser. Type a message in the chat box to begin the conversation.
 
+## Project Structure
+
+```text
+ChatBot/
+├── Bot/
+│   └── ChatBot.py
+├── .env
+├── README.md
+└── .venv/
+```
+
+## Notes
+
+- Chat history is stored in the current Streamlit session and is not persisted after the session ends.
+- The app sends the current conversation history to the model on each turn so it can maintain context.
+- If you want to change the model or its configuration, update the relevant settings in `Bot/ChatBot.py`.
